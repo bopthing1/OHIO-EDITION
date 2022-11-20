@@ -1,0 +1,53 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 4/18/22, 4:19 PM
+Description: Exception in server tick loop
+
+java.lang.Error: Unresolved compilation problem: 
+	The method setPlayerWalkSpeed(float) in the type PlayerCapabilities is not applicable for the arguments (double)
+
+	at net.minecraft.server.management.PlayerManager$PlayerInstance.addPlayer(PlayerManager.java:375)
+	at net.minecraft.server.management.PlayerManager.addPlayer(PlayerManager.java:149)
+	at net.minecraft.server.management.ServerConfigurationManager.preparePlayer(ServerConfigurationManager.java:267)
+	at net.minecraft.server.management.ServerConfigurationManager.playerLoggedIn(ServerConfigurationManager.java:322)
+	at net.minecraft.server.management.ServerConfigurationManager.initializeConnectionToPlayer(ServerConfigurationManager.java:166)
+	at net.minecraft.server.network.NetHandlerLoginServer.tryAcceptPlayer(NetHandlerLoginServer.java:138)
+	at net.minecraft.server.network.NetHandlerLoginServer.update(NetHandlerLoginServer.java:65)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:203)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:796)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:686)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.8
+	Operating System: Windows 10 (amd64) version 10.0
+	CPU: 8x Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+	Java Version: 17.0.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 866362376 bytes (826 MB) / 1073741824 bytes (1024 MB) up to 1073741824 bytes (1024 MB)
+	JVM Flags: 3 total; -Xmx1024M -Xms1024M -XX:+ShowCodeDetailsInExceptionMessages
+	IntCache: cache: 6, tcache: 0, allocated: 13, tallocated: 99
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player796'/135, l='mcpworld', x=577.02, y=69.00, z=-144.10]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated
+	OptiFine Version: OptiFine_1.8.8_HD_U_H8
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 457.51
+	OpenGlRenderer: GeForce RTX 2060/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8

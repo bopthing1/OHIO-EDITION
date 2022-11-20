@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.gui.FontRenderer"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.multiplayer.WorldClient"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.World"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="net.minecraft.util.BlockPos"/>
+</qualifiedTypeNameHistroy>

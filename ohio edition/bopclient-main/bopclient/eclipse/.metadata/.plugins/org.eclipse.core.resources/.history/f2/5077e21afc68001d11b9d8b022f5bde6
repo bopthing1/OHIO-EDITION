@@ -1,0 +1,26 @@
+package ohioclient;
+
+import net.minecraft.client.Minecraft;
+import ohioclient.event.EventManager;
+
+public class OhioClient {
+	public String name = "bopclient", version = "1.0.0", author = "bop";
+	public EventManager eventManager;
+	public static OhioClient instance = new OhioClient();
+	Minecraft mc = Minecraft.getMinecraft();
+	
+	public void startup() {
+		
+		eventManager = new EventManager();
+		System.out.println("starting " + name + " " + version + " by " + author);
+		eventManager.register(this);
+	} 
+	
+	public void shutdown() {
+		System.out.println("shut up");
+		eventManager.unregister(this);
+	}
+	
+	public void joinedWorld() {
+	}
+}
